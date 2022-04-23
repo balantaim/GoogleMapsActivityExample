@@ -1,4 +1,4 @@
-package com.martinatanasov.map;
+package com.martinatanasov.maps;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
