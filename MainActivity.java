@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
     FloatingActionButton map_button;
     private static final String TAG = "MainActivity";
     private static final int ERROR_DIALOG_REQUEST = 9001;
@@ -33,16 +32,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MapActivity.class));
             }
         });
-
-
-        customAdapter= new CustomAdapter(MainActivity.this, this, book_id, book_title, book_author, book_pages);
-
-        //SimpleCallback - Drag and Drop function
-        new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(recyclerView);
-
-        recyclerView.setAdapter(customAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-
     }
 
     public boolean isServicesOK(){
@@ -60,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
 
     @Override
     public void onBackPressed() {
