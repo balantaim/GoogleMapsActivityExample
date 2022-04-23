@@ -1,6 +1,11 @@
 package com.martinatanasov.maps;
 
-
+import android.os.Bundle;
+import android.util.Log;
+import android.content.Intent;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
