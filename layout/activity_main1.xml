@@ -16,6 +16,6 @@
         android:focusable="true"
         android:elevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/add_button" />
+        app:layout_constraintEnd_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
